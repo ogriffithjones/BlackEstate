@@ -1,0 +1,115 @@
+.nav {
+    // Nav Base
+    padding: 5px 20px;
+
+    &-menu {
+        list-style-type: none;
+
+        // Mobile First
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+        &__item {
+            font-size: 16px;
+            padding: 15px 5px;
+            white-space: nowrap;
+            
+            // Mobile First
+            width: 100%;
+            text-align: center;
+            order: 3;
+            display: none;
+
+            &--active {
+                display: block;
+            }
+        }
+
+        &__link {
+            color: $nav-light;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        &__logo {
+            height: 20px;
+        }
+
+        &__svg {
+            height: 100%;
+            &--white {
+                fill: $nav-light;
+            }
+        }
+    }
+
+    // Mobile First
+    
+
+
+
+}
+
+// .nav {
+//     padding: 20px 50px;
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: space-between;
+//     align-items: center;
+//     font-family: $link-font;
+//     font-weight: 400;
+
+//     &__logo {
+//         width: 90px;
+//         order: 0;
+//     }
+
+//     &__svg {
+//         width: 100%;
+//         &--white {
+//             fill: $nav-dark;
+//         }
+//     }
+
+//     &__burger {
+//         order: 3;
+//         font-size: 20px;
+//     }
+
+//     .nav-menu {
+//         list-style-type: none;
+//         display: flex;
+//         flex-wrap: wrap;
+//         justify-content: space-between;
+//         align-items: center;
+//         order: 2;
+
+//         &__item {
+//             font-size: 13px;
+//             padding: 15px 20px;
+//             white-space: nowrap;
+
+//             // Desktop
+//             display: block;
+//             width: auto;
+//             order: 1;
+//         }
+
+//         &__link {
+//             color: $nav-dark;
+//             text-decoration: none;
+
+//             &:hover {
+//                 text-decoration: underline;
+//             }
+//         }
+//     }
+
+//     // @include mobile-breakpoint {
+
+//     // }
+// }
