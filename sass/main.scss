@@ -25,6 +25,7 @@
 */
 
 @import "config";
+@import "utils/breakpoints";
 @import "base-styles";
 
 /*
@@ -38,4 +39,8 @@
 */
 
 @import "components/nav";
+
+// Home Page
+@import "components/hero";
+@import "components/home-shop";
 
