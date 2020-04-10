@@ -3,3 +3,9 @@
         @content;
     }
 }
+
+@mixin large-breakpoint {
+    @media screen and (min-width: 1000px) {
+        @content;
+    }
+}

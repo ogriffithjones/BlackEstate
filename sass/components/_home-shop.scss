@@ -17,20 +17,55 @@
 
     .shop-items {
         width: 100%;
-        display: flex;
+        margin-top: 70px;
 
         &__item {
-            flex-grow: 1;
             position: relative;
-            margin:5px;
-            overflow: hidden;
+            width: 70%;
+            margin-left: 15%;
+            margin-bottom: 30px;
+        }
+        &__photo {
             background-color: #F1F1F1;
+            padding: 14px 20px 10px 20px;
+            height: 370px;
+            overflow: hidden;
         }
         &__img {
-            background-color: #F1F1F1;
-            padding: 20px;
-            width: calc(100% - 40px);
+            width: 100%;
             mix-blend-mode: darken;
+        }
+        p {
+            text-align: center;
+            font-family: $body-font;
+            font-weight: 300;
+            font-size: 1em;
+            line-height: 29px;
+            letter-spacing: -0.333333px;
+            color: $text-dark-lighten;
+
+            padding: 0px 15% 0px 15%;
+            
+            strong {
+                font-weight: normal;
+            }
+        }
+    }
+
+    // Mobile
+    @include large-breakpoint {
+        .shop-items {
+            display: flex;
+            flex-flow: row wrap;
+            width: 90%;
+            margin-left: 5%;
+            margin-top: 70px;
+    
+            &__item {
+                margin:8px;
+                height: auto;
+                flex: 0 1 calc(20% - 16px);
+            }
         }
     }
 }
