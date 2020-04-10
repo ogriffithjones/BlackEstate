@@ -1,8 +1,36 @@
 .shop {
-    width: 100vw;
+    padding: 85px;
 
     &__headding {
         font-size: 25px;
         font-family: $headding-font;
+
+        &:after {
+            border-bottom: 2px solid black;
+            display: block;
+            position: relative;
+            width: 30px;
+            content: "";
+            top: 15px;
+        }
+    }
+
+    .shop-items {
+        width: 100%;
+        display: flex;
+
+        &__item {
+            flex-grow: 1;
+            position: relative;
+            margin:5px;
+            overflow: hidden;
+            background-color: #F1F1F1;
+        }
+        &__img {
+            background-color: #F1F1F1;
+            padding: 20px;
+            width: calc(100% - 40px);
+            mix-blend-mode: darken;
+        }
     }
 }
